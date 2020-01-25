@@ -1,0 +1,113 @@
+\documentclass[12pt,a4paper,oneside,ngerman]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage{titlesec}
+
+\usepackage[hidelinks]{hyperref} % Hyperlinks
+\usepackage[onehalfspacing]{setspace} % 1,5facher Zeilenabstand
+
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{color}
+\definecolor{bisque}{rgb}{1.0, 0.89, 0.77}
+\definecolor{mygreen}{rgb}{0,0.5,0}
+\definecolor{mygray}{rgb}{0.7,0.7,0.7}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+
+\usepackage{graphicx} 	
+\usepackage{wrapfig}
+
+\usepackage{hyphenat}
+\hyphenation{TUM in-te-res-siert} % Eigene
+
+%\usepackage{pdfpages}
+\usepackage{enumitem}
+
+\usepackage{amsmath}
+
+
+\usepackage{siunitx}
+\DeclareSIUnit\molar{\mole\per\cubic\deci\metre}
+\DeclareSIUnit\Molar{M}
+\DeclareSIUnit\ccm{ccm}
+
+
+%\newcommand{\sectionbreak}{\clearpage}
+%\newcommand\subsectionbreak{\ifnum\value{subsection}>1\clearpage\fi}
+%\newcommand{\sectionbreak}{\clearpage}
+%\titleformat{\chapter}[display]
+%  {\normalfont\bfseries}{}{0pt}{\Huge}
+%\renewcommand\thesubsection{\alph{subsection}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[c]{Lucas Perocco Moreira, Johann Brenner}
+\fancyfoot[c]{\thepage}
+
+	 
+
+\begin{document}
+
+
+\thispagestyle{empty}
+
+
+    \title{\vspace{15mm}\centering\includegraphics[width = 100mm]{img/tum_logo.eps}
+		\\[3\baselineskip]
+		\textbf{\Huge Praktikumsbericht 3D Druck für Bioelektronik und Biomedizinische Anwendungen}}
+	
+	\author{\vspace{10mm}Lucas Perocco Moreira\\Johann Brenner}
+	\date{\vspace{15mm}{\small Sommersemester 2019}}
+	\maketitle
+    \clearpage
+    \tableofcontents
+    \clearpage
+    
+    
+    \section{Motivation}
+    \input{Motivation.tex}
+    
+    \clearpage
+    \section{Theoretische Grundlagen}
+    \input{Theorie.tex}
+    
+    \clearpage
+    \section{Material und Methoden}
+    \input{Stereoprinting.tex}
+    \input{Inkjetprinting.tex}
+    \input{Elektrochemie.tex}
+    
+    \clearpage
+    \section{Ergebnisse}
+    \input{Ergebnisse.tex}
+    
+    \clearpage
+    \section{Diskussion der Ergebnisse}
+    \input{Diskussion.tex}
+    
+    \clearpage
+    \section{Fazit und Ausblick}
+    \input{Fazit.tex}
+    
+    \clearpage
+    \input{Appendix.tex}
+
+    \clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{literature.bib}
+
+\clearpage
+\listoffigures
+
+
+\end{document}
